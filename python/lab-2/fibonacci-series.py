@@ -9,5 +9,5 @@ def fibonacci(n):
 terms = int(input("Enter the number of terms in the Fibonacci series: "))
 print("Fibonacci series:")
 
-for i in range(0, terms):
+for i in range(terms):
     print(fibonacci(i), end=" ")
