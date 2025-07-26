@@ -13,13 +13,14 @@ def hello_world(str, char_set):
 
     # Iterate through each character in the string
     for i in str:
-        for j in char_set:       
+        for j in char_set:    
+            
+            print("".join(result) + j)  # Print the current result and the character being checked
+            time.sleep(0.02)            # Adding a delay to simulate waterfall effect
+
             if i == j:                  # If the character matches, append it to the result
                 result.append(i)
                 break
-
-            print("".join(result) + j)  # Print the current result and the character being checked
-            time.sleep(0.02)            # Adding a delay to simulate waterfall effect
 
                 
 hello_world("Hello, World!", char_set_space + char_set_alpha + char_set_special)
