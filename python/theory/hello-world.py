@@ -8,7 +8,7 @@ char_set_space = list(" ")
 
 import time 
 
-def hello_world(str, char_set):
+def waterfall_print(str, char_set):
     result = []
 
     # Iterate through each character in the string
@@ -23,4 +23,4 @@ def hello_world(str, char_set):
                 break
 
                 
-hello_world("Hello, World!", char_set_space + char_set_alpha + char_set_special)
+waterfall_print("Hello, World!", char_set_space + char_set_alpha + char_set_special)
